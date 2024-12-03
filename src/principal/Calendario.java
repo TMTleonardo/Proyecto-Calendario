@@ -99,4 +99,7 @@ public class Calendario {
             return "En actividad";
         }
     }
+
+	public void mostrarEventosYtareasParaFecha(String fechaPrueba) {		
+	}
 }

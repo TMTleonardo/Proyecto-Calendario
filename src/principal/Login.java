@@ -63,7 +63,7 @@ public class Login extends JFrame {
         }
     }
 
-    private boolean validarEmpleado(String usuario) {
+    public static boolean validarEmpleado(String usuario) {
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement pstmt = conn.prepareStatement("SELECT idEmpleado FROM Empleado WHERE usuario = ?")) {
             pstmt.setString(1, usuario);
@@ -78,7 +78,7 @@ public class Login extends JFrame {
         return false;
     }
 
-    public boolean validarJefe(String usuario, String password) {
+    public static boolean validarJefe(String usuario, String password) {
         Connection conn = DatabaseConnection.getConnection();
         if (conn == null) {
             JOptionPane.showMessageDialog(null, "No se pudo conectar a la base de datos. Verifique la configuración.");

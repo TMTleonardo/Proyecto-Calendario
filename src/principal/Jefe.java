@@ -156,6 +156,17 @@ public class Jefe {
         }
         return nombreJefe;
     }
+
+	public static JPanel crearPanelJefes() {
+		return null;
+	}
+
+	public static void agregarJefe(String string, String string2, String string3, int i, String string4, String string5,
+			String string6) {
+	}
+
+	public static void cargarJefes() {
+	}
 }
 
 
